@@ -1,0 +1,40 @@
+<div class="blog-container" [@flyInOut]="'in'">
+
+  <div class="blog-content">
+    <div class="blog-item ease" *ngFor="let article of articles" (click)="gotoArticle(article)">
+      <a >
+        <div class="blog-item-content">
+          <div class="blog-image ">
+            <img class="ease" src="{{article.coverImg}}" alt="">
+            <div class="title"><h3>{{article.abstract}}</h3></div>
+            <div class="frame-mark ease">
+              <p>阅读全文</p>
+            </div>
+          </div>
+          <div class="blog-msg">
+            <h2 class="blog-title">{{article.title}}</h2>
+            <h5 class="blog-date">{{article.date}}</h5>
+            <div class="split"></div>
+          </div>
+          <div class="blog-footer">
+            <div> <i class="glyphicon glyphicon-comment"></i>&nbsp;<span class="ng-binding">{{article.commentCount}}</span></div>
+            <div> <i class="glyphicon glyphicon-eye-open"></i>&nbsp;<span class="ng-binding">{{article.readCount}}</span></div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="loading" *ngIf="hide">
+    <div class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+
+  </div>
+
+</div>

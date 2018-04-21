@@ -1,3 +1,7 @@
+# This is a blog which use ng2.
+
+ The Blog back end you can see [git](https://github.com/FiShelly/Blog)
+
 # Angular2Blog
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
